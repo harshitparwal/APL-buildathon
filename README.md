@@ -8,9 +8,9 @@ FanPulse is a real-time, second-screen interactive sports companion application 
 
 ## ✨ Features
 
-- **Call the Ball (Micro-Predictions):** Predict the outcome of the next delivery (Dot, Single, Boundary, Wicket) before it is bowled to earn points!
-- **Live Crowd Pulse:** A global sentiment meter that tracks the mood of the audience in real-time. Spam the 🔥, 🤯, 😡, and 🥶 emojis to swing the meter!
-- **Armchair Umpire (DRS System):** When a close call happens, the simulation pauses and hands the decision to the audience. Vote OUT or NOT OUT and watch the community consensus roll in.
+- **Call the Ball (Micro-Predictions):** Predict the outcome of the next delivery (Dot, Single, Boundary, Wicket). You have a 10-second window to lock in your prediction before the bowler begins their run-up! Correct predictions earn +10 points.
+- **Live Crowd Pulse:** A global sentiment meter that tracks the mood of the audience in real-time. Spam the 🔥, 🤯, 😡, and 🥶 emojis to swing the meter and watch the emojis physically float up the screen for every connected user in real-time!
+- **Armchair Umpire (DRS System):** When a close call happens, the simulation triggers a 10-second community review. Vote OUT or NOT OUT and watch the live consensus roll in. Correctly predicting the final verdict rewards you with +5 points!
 - **Ephemeral Chat:** When a massive moment occurs (like a boundary), a temporary chat room slides onto the screen for 30 seconds, letting the audience react wildly before vanishing.
 - **Glassmorphism UI:** A premium, modern, responsive design built with raw CSS and flexbox.
 
