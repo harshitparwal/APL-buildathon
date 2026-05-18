@@ -588,3 +588,29 @@ button:disabled {
         opacity: 0;
     }
 }
+
+.floating-emoji {
+    position: fixed;
+    bottom: -50px;
+    font-size: 2rem;
+    z-index: 1000;
+    pointer-events: none;
+    animation: floatUp ease-in forwards;
+    opacity: 0;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(0.5);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(-20vh) scale(1.2);
+    }
+    100% {
+        transform: translateY(-100vh) scale(1);
+        opacity: 0;
+    }
+}
+
