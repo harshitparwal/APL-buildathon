@@ -294,6 +294,21 @@ function handleSyncEvent(data) {
     else if (type === 'reaction') {
         pulseScore = Math.max(0, Math.min(100, pulseScore + payload.change));
         pulseBar.style.width = `${pulseScore}%`;
+
+        // Spawn floating emoji
+        if (payload.emoji) {
+            const emojiEl = document.createElement('div');
+            emojiEl.classList.add('floating-emoji');
+            emojiEl.textContent = payload.emoji;
+            emojiEl.style.left = `${30 + Math.random() * 40}%`; // Random horizontal position
+            emojiEl.style.animationDuration = `${1.5 + Math.random()}s`;
+            document.body.appendChild(emojiEl);
+            
+            // Remove after animation completes
+            setTimeout(() => {
+                emojiEl.remove();
+            }, 3000);
+        }
     }
     else if (type === 'umpire_vote') {
         if (payload.vote === 'out') votes.out++;
